@@ -12,7 +12,7 @@ function TodoForm({ addTodo }) {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className='w-75 mx-auto'>
       <InputGroup className="mb-3">
         <Form.Control 
           type="text" 
@@ -20,7 +20,7 @@ function TodoForm({ addTodo }) {
           value={title} 
           onChange={(e) => setTitle(e.target.value)} 
         />
-        <Button variant="primary" type="submit">Add</Button>
+        <Button variant="danger" type="submit">Add</Button>
       </InputGroup>
     </Form>
   );

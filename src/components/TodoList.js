@@ -5,7 +5,7 @@ import { ListGroup } from 'react-bootstrap';
 
 function TodoList({ todos, deleteTodo, toggleComplete, editTodo }) {
   return (
-    <ListGroup>
+    <ListGroup className='w-75 mx-auto'>
       {todos.length === 0 ? (
         <p className="text-center">No todos yet! Add one.</p>
       ) : (

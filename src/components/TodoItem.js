@@ -26,7 +26,7 @@ function TodoItem({ todo, deleteTodo, toggleComplete, editTodo }) {
           {todo.title}
         </span>
       )}
-      <div>
+      <div className='d-flex ms-2'>
         <Button variant="success" size="sm" onClick={() => toggleComplete(todo.id)} className="me-2">
           {todo.completed ? 'Undo' : 'Complete'}
         </Button>
