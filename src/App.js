@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Todo App New 2</h1>
+      <h1 className="text-center mb-4">Todo App New</h1>
       <TodoForm addTodo={addTodo} />
       <TodoList 
         todos={todos} 
