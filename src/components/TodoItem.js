@@ -17,16 +17,17 @@ function TodoItem({ todo, deleteTodo, toggleComplete, editTodo }) {
     <ListGroup.Item className="d-flex justify-content-between align-items-center">
       {isEditing ? (
         <Form.Control 
+        className='w-50'
           type="text" 
           value={newTitle} 
           onChange={(e) => setNewTitle(e.target.value)} 
         />
       ) : (
-        <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+        <span className='w-50' style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
           {todo.title}
         </span>
       )}
-      <div className='d-flex ms-2'>
+      <div className='d-flex flex-wrap gy-3 ms-2 w-50 align-items-end justify-content-end'>
         <Button variant="success" size="sm" onClick={() => toggleComplete(todo.id)} className="me-2">
           {todo.completed ? 'Undo' : 'Complete'}
         </Button>
